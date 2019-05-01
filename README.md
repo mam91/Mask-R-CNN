@@ -1,8 +1,8 @@
-python shuriken_gun.py train --dataset=C:/Users/mmill/Documents/GitHub/Education/MaskRCnn/datasets/shuriken_gun --weights=last
+python shuriken_gun.py train --dataset=PATH_TO_/MaskRCnn/datasets/shuriken_gun --weights=last
 
-python shuriken_gun.py train --dataset=C:/Users/mmill/Documents/GitHub/Education/MaskRCnn/datasets/shuriken_gun --weights=coco
+python shuriken_gun.py train --dataset=PATH_TO_/MaskRCnn/datasets/shuriken_gun --weights=coco
 
-python supervisely.py train --dataset=C:/Users/mmill/Documents/GitHub/Education/MaskRCnn/datasets/supervisely --weights=coco
+python supervisely.py train --dataset=PATH_TO_/MaskRCnn/datasets/supervisely --weights=coco
 
 ***MASK R CNN DETECT AND EVAL***
 python shuriken_gun.py detect --weights=last
@@ -10,10 +10,10 @@ python shuriken_gun.py detect --weights=last
 python shuriken_gun.py eval --weights=last
 
 
-python shuriken_gun.py detect --weights=C:/Users/mmill/Documents/GitHub/Education/MaskRCnn/logs/shuriken_gun20190407T0317/mask_rcnn_shuriken_gun_0030.h5
-python shuriken_gun.py eval --weights=C:/Users/mmill/Documents/GitHub/Education/MaskRCnn/logs/shuriken_gun20190331T2335/mask_rcnn_shuriken_gun_0135.h5
+python shuriken_gun.py detect --weights=PATH_TO_/MaskRCnn/logs/shuriken_gun20190407T0317/mask_rcnn_shuriken_gun_0030.h5
+python shuriken_gun.py eval --weights=PATH_TO_/MaskRCnn/logs/shuriken_gun20190331T2335/mask_rcnn_shuriken_gun_0135.h5
 
-tensorboard --logdir=C:/Users/mmill/Documents/GitHub/Education/MaskRCnn/logs/shuriken_gun20190409T0146
+tensorboard --logdir=PATH_TO_/MaskRCnn/logs/shuriken_gun20190409T0146
 
 **YOLO***
 

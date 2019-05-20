@@ -1,24 +1,31 @@
-python shuriken_gun.py train --dataset=PATH_TO_/MaskRCnn/datasets/shuriken_gun --weights=last
+Commands to train and evaluate are as follows:
 
-python shuriken_gun.py train --dataset=PATH_TO_/MaskRCnn/datasets/shuriken_gun --weights=coco
+1. In terminal, navigate to Mask-R-CNN/samples/gdxray directory
 
-python supervisely.py train --dataset=PATH_TO_/MaskRCnn/datasets/supervisely --weights=coco
+2. To train, execute one of the following commands:
 
-***MASK R CNN DETECT AND EVAL***
-python shuriken_gun.py detect --weights=last
+  #To train a dataset on weights pretrained on the COCO dataset
+  python gdxray.py train --dataset=PATH_TO_/Mask-R-CNN/datasets/gdxray --weights=coco
 
-python shuriken_gun.py eval --weights=last
+  #To train a dataset on weights pretrained on the ImageNet dataset
+  python gdxray.py train --dataset=PATH_TO_/Mask-R-CNN/datasets/gdxray --weights=imagenet
 
+  #To resume training from a pevious execution
+  python gdxray.py train --dataset=PATH_TO_/Mask-R-CNN/datasets/gdxray --weights=last
 
-python shuriken_gun.py detect --weights=PATH_TO_/MaskRCnn/logs/shuriken_gun20190407T0317/mask_rcnn_shuriken_gun_0030.h5
-python shuriken_gun.py eval --weights=PATH_TO_/MaskRCnn/logs/shuriken_gun20190331T2335/mask_rcnn_shuriken_gun_0135.h5
+3. To evaluation a trained model, execute one of the following commands:
 
-tensorboard --logdir=PATH_TO_/MaskRCnn/logs/shuriken_gun20190409T0146
+  #To evaluate last model trained
+  python gdxray.py eval --weights=last
 
-**YOLO***
+  #To evaluate a specific set of weights
+  python gdxray.py eval --weights=/path/to/weights.h5
 
-flow --model cfg/yolo-xray.cfg --load bin/yolo.weights --train --annotation shuriken/annotations --dataset shuriken/Images --labels shuriken/labels.txt --load -1
+  #Example weights location = PATH_TO_/Mask-R-CNN/logs/shuriken_gun20190407T0317/mask_rcnn_shuriken_gun_0030.h5
 
-flow --model cfg/tiny-yolo-voc-xray.cfg --load bin/tiny-yolo-voc.weights --train --annotation shuriken/annotations --dataset shuriken/Images --labels shuriken/labels.txt --gpu 0.7
-
-flow --imgdir shuriken/eval --model cfg/tiny-yolo-voc-xray.cfg --load bin/tiny-yolo-voc.weights --labels shuriken/labels.txt --thresh 0.3
+To run tensorboard, execute the following on a log folder
+  tensorboard --logdir=/path/to/log/folder
+  
+  #Example log directory = PATH_TO_/Mask-R-CNN/logs/shuriken_gun20190409T0146
+  
+To make changes to the layers, check the PATH_TO_/Mask-R-CNN/mrccn/model.py file.

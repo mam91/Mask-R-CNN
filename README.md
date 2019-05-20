@@ -41,3 +41,23 @@ Annotations must at least contain the following fields:
   * height
   * width
   * segmentation mask (can be stored in any format as long as it can be converted to a binary mask when loading) 
+  
+#### 2. Create directory structure for new dataset
+1. Create dataset folders under datasets:  
+  */Mask-R-CNN/datasets/dataset_name/
+  */Mask-R-CNN/datasets/dataset_name/train
+  */Mask-R-CNN/datasets/dataset_name/val
+  
+2. Move training data
+  *Move training image-annotation pairs into /Mask-R-CNN/datasets/dataset_name/train
+  *Move test image-annotation pairs into /Mask-R-CNN/datasets/dataset_name/val
+  
+#### 3. Create directory structure for new scripts if necesssary
+1. Create copy of gdxray folder in /Mask-R-CNN/samples
+2. (Optional) Rename folder and script file (gdxray.py)
+3. (Optional) Rename class objects such as GDXrayConfig and GDXrayDataset in the script file (previously gdxray.py).
+4. Update references in both jupyter notebooks to reference the new dataset and configs
+
+#### 4. Validate data
+To ensure data is in correct format, run the jupyter notebook "inspect_data.ipynb".  This notebook will load the dataset and the ground truth masks.  Any issues should be evident.
+

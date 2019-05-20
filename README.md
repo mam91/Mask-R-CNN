@@ -4,14 +4,14 @@
 
 #### 2. To train, execute one of the following commands:
 
-  -To train a dataset on weights pretrained on the COCO dataset
-  python gdxray.py train --dataset=PATH_TO_/Mask-R-CNN/datasets/gdxray --weights=coco
+  To train a dataset on weights pretrained on the COCO dataset
+  * python gdxray.py train --dataset=PATH_TO_/Mask-R-CNN/datasets/gdxray --weights=coco
 
-  -To train a dataset on weights pretrained on the ImageNet dataset
-  python gdxray.py train --dataset=PATH_TO_/Mask-R-CNN/datasets/gdxray --weights=imagenet
+  To train a dataset on weights pretrained on the ImageNet dataset
+  * python gdxray.py train --dataset=PATH_TO_/Mask-R-CNN/datasets/gdxray --weights=imagenet
 
-  -To resume training from a pevious execution
-  python gdxray.py train --dataset=PATH_TO_/Mask-R-CNN/datasets/gdxray --weights=last
+  To resume training from a pevious execution
+  * python gdxray.py train --dataset=PATH_TO_/Mask-R-CNN/datasets/gdxray --weights=last
 
 #### 3.To evaluation a trained model, execute one of the following commands:
 

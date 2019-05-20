@@ -23,7 +23,7 @@
 
   Example weights location = PATH_TO_/Mask-R-CNN/logs/shuriken_gun20190407T0317/mask_rcnn_shuriken_gun_0030.h5
 
-#### To run tensorboard, execute the following on a log folder
+## To run tensorboard, execute the following on a log folder
   ` tensorboard --logdir=/path/to/log/folder `
   
   Example log directory = PATH_TO_/Mask-R-CNN/logs/shuriken_gun20190409T0146

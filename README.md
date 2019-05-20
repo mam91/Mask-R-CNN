@@ -29,3 +29,13 @@
   Example log directory = PATH_TO_/Mask-R-CNN/logs/shuriken_gun20190409T0146
   
 ### To make changes to the layers, check the PATH_TO_/Mask-R-CNN/mrccn/model.py file.
+
+### Steps to create new training flow with new dataset
+## 1. Annotate the dataset
+Annotations must at least contain the following fields:
+  * class label
+  * id (can be filename)
+  * path (full path to image)
+  * height
+  * width
+  * segmentation mask (can be stored in any format as long as it can be converted to a binary mask when loading) 

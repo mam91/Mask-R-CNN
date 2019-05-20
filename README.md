@@ -4,8 +4,8 @@
 
 #### 2. To train, execute one of the following commands:
 
-  ` #To train a dataset on weights pretrained on the COCO dataset: <br><br>
-   python gdxray.py train --dataset=PATH_TO_/Mask-R-CNN/datasets/gdxray --weights=coco `
+  To train a dataset on weights pretrained on the COCO dataset: <br><br>
+  ` python gdxray.py train --dataset=PATH_TO_/Mask-R-CNN/datasets/gdxray --weights=coco `
 
   To train a dataset on weights pretrained on the ImageNet dataset: <br><br>
   ` python gdxray.py train --dataset=PATH_TO_/Mask-R-CNN/datasets/gdxray --weights=imagenet `

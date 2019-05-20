@@ -28,7 +28,9 @@
   
   Example log directory = PATH_TO_/Mask-R-CNN/logs/shuriken_gun20190409T0146
   
-#### To make changes to the layers, check the PATH_TO_/Mask-R-CNN/mrccn/model.py file.
+## Modifying layers
+
+To make changes to the layers, check the PATH_TO_/Mask-R-CNN/mrccn/model.py file.
 
 ## Steps to create new training flow with new dataset
 #### 1. Annotate the dataset

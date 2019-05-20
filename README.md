@@ -15,7 +15,7 @@
 
 #### 3. To evaluation a trained model, execute one of the following commands:
 
-  To evaluate last model trained
+  To evaluate last model trained <br>
   ` python gdxray.py eval --weights=last `
   
   To evaluate a specific set of weights

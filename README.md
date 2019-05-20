@@ -1,6 +1,6 @@
-Commands to train and evaluate are as follows:
+#H2 Commands to train and evaluate are as follows:
 
-1. In terminal, navigate to Mask-R-CNN/samples/gdxray directory
+#H5 1. In terminal, navigate to Mask-R-CNN/samples/gdxray directory
 
 2. To train, execute one of the following commands:
 
@@ -13,7 +13,7 @@ Commands to train and evaluate are as follows:
   #To resume training from a pevious execution
   python gdxray.py train --dataset=PATH_TO_/Mask-R-CNN/datasets/gdxray --weights=last
 
-3. To evaluation a trained model, execute one of the following commands:
+#H23. To evaluation a trained model, execute one of the following commands:
 
   #To evaluate last model trained
   python gdxray.py eval --weights=last

@@ -13,11 +13,11 @@
   To resume training from a pevious execution
   * python gdxray.py train --dataset=PATH_TO_/Mask-R-CNN/datasets/gdxray --weights=last
 
-#### 3.To evaluation a trained model, execute one of the following commands:
+#### 3. To evaluation a trained model, execute one of the following commands:
 
   To evaluate last model trained
-  * python gdxray.py eval --weights=last
-
+  ` python gdxray.py eval --weights=last `
+  
   To evaluate a specific set of weights
   * python gdxray.py eval --weights=/path/to/weights.h5
 
@@ -28,4 +28,4 @@
   
   Example log directory = PATH_TO_/Mask-R-CNN/logs/shuriken_gun20190409T0146
   
-## To make changes to the layers, check the PATH_TO_/Mask-R-CNN/mrccn/model.py file.
+### To make changes to the layers, check the PATH_TO_/Mask-R-CNN/mrccn/model.py file.

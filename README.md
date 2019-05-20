@@ -33,6 +33,8 @@
 To make changes to the layers, check the PATH_TO_/Mask-R-CNN/mrccn/model.py file.
 
 ## Steps to create new training flow with new dataset
+Follow these steps if you want to preserve the gdxray dataset and scripts and create a different workspace.
+
 #### 1. Annotate the dataset
 Annotations must at least contain the following fields:
   * class label
@@ -60,4 +62,6 @@ Annotations must at least contain the following fields:
 
 #### 4. Validate data
 To ensure data is in correct format, run the jupyter notebook "inspect_data.ipynb".  This notebook will load the dataset and the ground truth masks.  Any issues should be evident.
+
+##### NOTE: The gdxray dataset and scripts should work out of the box.  You can simply change the training data and, as long as the annotations are in the same format, successfully train on different data.
 
